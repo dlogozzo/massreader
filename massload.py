@@ -54,7 +54,7 @@ class Inputs(object):
 
 
 #initialize the class and merge
-merge = Inputs(',', skiprows=1, skipfooter=3, 'F:/Desktop/TestFiles')
+merge = Inputs(separator='/t', skiprows=1, skipfooter=3, 'F:/Desktop/TestFiles')
 
 #returns master dataframe
 df = merge.massread()
